@@ -12,8 +12,8 @@ export default class Preloader extends Component {
         className={s.loader}
        type="Grid"
         color="#43a047"
-        height={70}
-        width={70}
+        height={80}
+        width={80}
         />
       </div>
     );
