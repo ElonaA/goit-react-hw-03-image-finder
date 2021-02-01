@@ -39,13 +39,13 @@ export default class ImageGallery extends Component {
     status: Status.IDLE,
   };
 
-  componentDidUpdate(prevProps, prevState) {
+  async componentDidUpdate(prevProps, prevState) {
     const prevSearch = prevProps.search;
     const nextSearch = this.props.search;
 
     if (prevSearch !== nextSearch) {
  
-      this.setState({
+      await this.setState({
         gallery: [],
         page: 1,
         status: Status.PENDING
