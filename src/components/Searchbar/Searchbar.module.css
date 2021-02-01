@@ -1,0 +1,91 @@
+.containerHeader {
+    background-color: rgb(74 74 74 / 84%);
+    padding: 40px 15px 60px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.input {
+    width: 100%;
+    background-image: url(../../img/loupe.svg);
+    background-repeat: no-repeat;
+    outline: none;
+    border: 2px solid #495057;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    background-position: 10px;
+    border-radius: 25px;
+    padding-left: 60px;
+    height: 50px;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    zoom: 1;
+    margin-left: 30px;
+    line-height: normal;
+    white-space: nowrap;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 100%;
+    font-weight: 500;
+    outline: none;
+    border: 0 transparent;
+    padding: 7px 30px;
+    color: #fff !important;
+    background-color: #02be6e !important;
+    text-decoration: none !important;
+    border-radius: 50px !important;
+    height: 50px;
+}
+button:focus {
+    outline: none;
+
+}
+
+.input:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #43a047;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgb(67 160 71 / 46%);
+}
+
+
+@media (max-width: 768px) {
+    .button {
+        width: 100%;
+        margin-top: 30px;
+        margin-left: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+.form {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 700px;
+    margin-top: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+@media (max-width: 768px) {
+    .form {
+        flex-direction: column-reverse;
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
