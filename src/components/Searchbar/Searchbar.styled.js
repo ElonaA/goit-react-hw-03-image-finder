@@ -11,7 +11,6 @@ export const Inner = styled.div`
 
 export const Input = styled.input`
     width: 100%;
-    background-image: url(../../img/loupe.svg);
     background-repeat: no-repeat;
     outline: none;
     border: 2px solid  ${props => props.theme.colors.green};
